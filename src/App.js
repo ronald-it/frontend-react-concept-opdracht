@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-      <p>Concept opdracht</p>
-  );
+    return (
+        <>
+            <h1>Test</h1>
+            <p>Concept opdracht</p>
+        </>
+    );
 }
 
 export default App;

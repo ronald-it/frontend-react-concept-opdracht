@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*Rood #dd3038;*/
+/*Oranje #e7613a;*/
+/*Licht oranje #FDF4F2;*/
+/*Zwart #292929 (voor standaard tekst);*/
+/*Wit #FFFFFF;*/
+
+/*Globals*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
