@@ -1,11 +1,25 @@
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from 'react-router-dom';
+import Home from "./pages/home/Home";
+import Subreddit from "./pages/subreddit/Subreddit";
 
 function App() {
+
     return (
-        <>
-            <h1>Test</h1>
-            <p>Concept opdracht</p>
-        </>
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    <Home/>
+                </Route>
+                <Route path="/subreddit/:subredditId">
+                    <Subreddit/>
+                </Route>
+            </Switch>
+        </Router>
     );
 }
 
