@@ -3,6 +3,7 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import './Home.css';
 import {Link} from "react-router-dom";
+import redditLogo from "../../assets/reddit-2-logo-png-transparent.png"
 
 function Home() {
     const [subredditList, setSubredditList] = useState([]);
@@ -22,6 +23,20 @@ function Home() {
     }, []);
 
     return (<>
+            <nav>
+                <div className="nav-inner-container">
+                    <ul>
+                        <li>HOTTEST POSTS</li>
+                        <li>REDDIT</li>
+                        <li>MEMES</li>
+                    </ul>
+                </div>
+            </nav>
+            <header>
+                <div className="header-inner-container">
+                    <img src={redditLogo} alt="Reddit logo"/>
+                </div>
+            </header>
             <main className="main-outer-container">
                 <div className="main-inner-container">
                     <div className="main-title-text">
@@ -38,7 +53,7 @@ function Home() {
                                 </div>
                                 <div className="tile-misc">
                                     <Link to={"/subreddit/" + subreddit.data.subreddit}>
-                                        <p>{subreddit.data.subreddit_name_prefixed}</p>
+                                        <p className="subreddit-name">{subreddit.data.subreddit_name_prefixed}</p>
                                     </Link>
                                     <p>Comments {subreddit.data.num_comments} - Ups {subreddit.data.ups}</p>
                                 </div>

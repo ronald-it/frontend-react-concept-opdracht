@@ -1,9 +1,73 @@
+header {
+    /*border: solid 2px black;*/
+    background: rgb(221,48,56);
+    background: linear-gradient(270deg, rgba(221,48,56,1) 0%, rgba(231,97,58,1) 90%, rgba(231,97,58,1) 99%);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-inner-container {
+    margin: 3em;
+    /*border: solid 2px black;*/
+    /*background: rgb(221,48,56);*/
+    /*background: linear-gradient(270deg, rgba(221,48,56,1) 0%, rgba(231,97,58,1) 90%, rgba(231,97,58,1) 99%);*/
+    color: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 815px;
+}
+
+nav {
+    /*border: solid 2px black;*/
+    background: rgb(221,48,56);
+    background: linear-gradient(270deg, rgba(221,48,56,1) 0%, rgba(231,97,58,1) 90%, rgba(231,97,58,1) 99%);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-inner-container {
+    /*border: solid 2px yellow;*/
+    /*background: rgb(221,48,56);*/
+    /*background: linear-gradient(270deg, rgba(221,48,56,1) 0%, rgba(231,97,58,1) 90%, rgba(231,97,58,1) 99%);*/
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 815px;
+}
+
+nav ul {
+    /*border: solid 2px blue;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 1em;
+    font-size: xx-small;
+}
+
+img {
+    width: 200px;
+    height: 170px;
+}
+
 .main-outer-container {
     background: #FDF4F2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3em;
 }
 
 .main-inner-container {
@@ -11,12 +75,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 2px black;
-    width: 1000px;
+    /*border: solid 2px black;*/
+    width: 815px;
 }
 
 .main-title-text {
-    border: solid 2px coral;
+    /*border: solid 2px coral;*/
     margin: 3em;
     display: flex;
     flex-direction: column;
@@ -38,13 +102,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 2px blueviolet;
-    width: 1000px;
+    /*border: solid 2px blueviolet;*/
+    width: 850px;
 }
 
 .reddit-tile {
-    border: solid 2px black;
+    /*border: solid 2px black;*/
     background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     color: #292929;
     margin: 1em;
     width: 250px;
@@ -52,6 +117,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.tile-title a {
+    text-decoration: none;
+    color: #292929;
+}
+
+.subreddit-name {
+    color: #dd3038;
+    font-weight: bold;
+}
+
+.tile-misc * {
+    text-decoration: none;
 }
 
 .tile-title {
@@ -68,4 +147,13 @@
     flex-direction: column;
     align-items: flex-start;
     font-size: small;
+}
+
+footer {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #292929;
+    color: #FFFFFF;
 }

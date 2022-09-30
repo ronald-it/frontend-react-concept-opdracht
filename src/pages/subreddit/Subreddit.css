@@ -1,0 +1,32 @@
+.header-inner-container h2 {
+    font-size: xx-large;
+}
+
+.header-inner-container p {
+    font-size: small;
+}
+
+.main-subreddit {
+    /*border: solid 2px black;*/
+    padding: 6em 0 6em 0;
+    background: #FDF4F2;
+    display: flex;
+    justify-content: center;
+}
+
+.main-subreddit-inner-container {
+    /*border: solid 2px black;*/
+    width: 815px;
+}
+
+.main-subreddit-inner-container * {
+    margin: 1em 0 1em 0;
+}
+
+.subreddit-subscribers {
+    margin-bottom: 4em;
+}
+
+.subreddit-link-div * {
+    color: #dd3038;
+}
